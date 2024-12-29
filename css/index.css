@@ -23,7 +23,7 @@ body {
 
 body {
 	height: 100vh; /* For Old Browsers */
-	height: 100svh;
+	height: 100dvh;
 }
 
 .container {
@@ -97,11 +97,19 @@ body {
 		margin: 0;
 		backdrop-filter: none;
 		border: none;
+		.prayer-time {
+			margin-bottom: 15px;
+		}
 	}
 	.container .top-sect .date {
 		width: 200px;
 	}
 	.container .top-sect #city {
 		width: 100px;
+	}
+
+	.container .top-sect {
+		padding-bottom: 40px;
+		margin-bottom: 40px;
 	}
 }
