@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	font-family: "Cairo";
+}
+html {
+	background-color: #222222;
+}
+
+html,
+body {
+	direction: rtl;
+	background-image: url("../assets/desert.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+body {
+	height: 100vh; /* For Old Browsers */
+	height: 100svh;
+}
+
+.container {
+	width: 650px;
+	background: #222a334e;
+	padding: 30px 25px;
+	border-radius: 10px;
+	border: 1px solid #d7d7d74e;
+	margin-right: 15%;
+	position: absolute;
+	top: 50%;
+	transform-origin: top right;
+	transform: translate(0, -50%);
+}
+
+.container .top-sect {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #d7d7d74e;
+	* {
+		color: #fff;
+		font-size: 20px;
+	}
+}
+.container .top-sect #city {
+	width: 250px;
+	background-color: #2972fa;
+	border-radius: 5px;
+	padding-right: 10px;
+	border: 1px solid #d7d7d74e;
+}
+
+.container .top-sect .date {
+	width: 250px;
+}
+
+.container .prayer-time {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 25px;
+	padding: 5px 25px;
+	background-color: #2972fa;
+	border-radius: 5px;
+	border: 1px solid #d7d7d74e;
+	* {
+		color: #fff;
+		font-size: 20px;
+	}
+}
+
+.prayerTime {
+	direction: ltr;
+}
+
+::selection {
+	background-color: transparent;
+}
+
+@media (max-width: 800px) {
+	body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.container {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		backdrop-filter: none;
+		border: none;
+	}
+	.container .top-sect .date {
+		width: 200px;
+	}
+	.container .top-sect #city {
+		width: 100px;
+	}
+}
