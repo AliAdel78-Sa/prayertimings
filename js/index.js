@@ -58,17 +58,17 @@ async function fetchPrayerApi() {
 	try {
 		// Getting Data For Query Params
 		const [today, tomorrow] = getDate();
-		// const [latitude, longitude] = await getLocation();
+		const [latitude, longitude] = await getLocation();
 		// Fetching API
 		const todayRes = await fetch(
 			`https://api.aladhan.com/v1/timings/${formatDate(
 				today
-			)}?latitude=${30}&longitude=${31}`
+			)}?latitude=${latitude}&longitude=${longitude}`
 		);
 		const tomorrowRes = await fetch(
 			`https://api.aladhan.com/v1/timings/${formatDate(
 				tomorrow
-			)}?latitude=${30}&longitude=${31}`
+			)}?latitude=${latitude}&longitude=${longitude}`
 		);
 		// Converting Data From JSON To JS Objects
 		const todayData = await todayRes.json();
