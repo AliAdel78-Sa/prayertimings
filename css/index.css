@@ -7,6 +7,7 @@
 	text-decoration: none;
 	list-style: none;
 	font-family: "Cairo";
+	user-select: none;
 }
 html {
 	background-color: #222222;
@@ -79,10 +80,6 @@ body {
 
 .prayerTime {
 	direction: ltr;
-}
-
-::selection {
-	background-color: transparent;
 }
 
 @media (max-width: 800px) {
