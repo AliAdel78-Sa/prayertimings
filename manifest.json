@@ -7,12 +7,19 @@
 	"display": "standalone",
 	"icons": [
 		{
-			"src": "assets/imgs/mosque(1).png",
+			"src": "assets/imgs/mosque-192.png",
 			"type": "image/png",
-			"sizes": "192x192"
+			"sizes": "192x192",
+			"purpose": "any"
 		},
 		{
-			"src": "assets/imgs/mosque.png",
+			"src": "assets/imgs/mosque-192-mobile.png",
+			"type": "image/png",
+			"sizes": "192x192",
+			"purpose": "maskable"
+		},
+		{
+			"src": "assets/imgs/mosque-512.png",
 			"type": "image/png",
 			"sizes": "512x512"
 		}
